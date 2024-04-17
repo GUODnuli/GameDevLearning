@@ -1,0 +1,76 @@
+# This .gitignore file should be placed at the root of your Unity project directory
+
+# =============== #
+# Unity generated #
+# =============== #
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+
+# ===================================== #
+# Visual Studio / MonoDevelop generated #
+# ===================================== #
+[Ee]xported[Oo]bj/
+.vs/
+/*.userprefs
+/*.csproj
+/*.pidb
+/*.suo
+/*.sln*
+/*.user
+/*.unityproj
+/*.booproj
+/.idea*/  # JetBrains Rider
+/.vscode/  # Visual Studio Code
+*_ReSharper*/
+*.[Rr]esharper
+.vsconfig
+ignore.conf
+
+# ============ #
+# OS generated #
+# ============ #
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ============= #
+# Builds output #
+# ============= #
+/[Bb]uild/
+/[Bb]uilds/
+
+# =============== #
+# Misc files #
+# =============== #
+/*.swp
+/*.bak
+/*.tmp
+/*.tfstate
+/*.tfstate.backup
+*.log
+*.csv
+*.dat
+*.tmp
+*.opendb
+*.lnk
+*.pxe
+*.flv
+*.swf
+*.unitypackage
+
+# ======== #
+# Packages #
+# ======== #
+# It's recommended to include package manifest json files (such as packages-lock.json or package.json) to source control,
+# however, you can uncomment the following line if you want to ignore changes to packages.
+# You should also manually review dependencies when updating the project.
+#/[Pp]ackages/
+
