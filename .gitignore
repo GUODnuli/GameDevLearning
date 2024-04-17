@@ -30,6 +30,8 @@
 *.[Rr]esharper
 .vsconfig
 ignore.conf
+.vscode/
+mono*
 
 # ============ #
 # OS generated #
