@@ -6,7 +6,7 @@ namespace AbstructClass
 {
     public abstract class AbstructFactor
     {
-        public abstract void AddProduct();
+        public abstract AbstructMouse CreatMouse();
     }
 }
 
