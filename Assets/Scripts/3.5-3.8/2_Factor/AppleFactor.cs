@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using AbstructClass;
 
-public class HpFactor : AbstructClass.AbstructFactor
+public class AppleFactor : AbstructClass.AbstructFactor
 {
     public override AbstructMouse CreatMouse()
     {
-        return new HpMouse();
+        return new AppleMouse();
     }
 }
