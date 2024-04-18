@@ -18,7 +18,8 @@ public class FactorMain : MonoBehaviour
     {
         // RunNormal();
         // RunSimpleFactor();
-        RunFactor();
+        // RunFactor();
+        RunAbstructFactor();
     }
 
     // Update is called once per frame
@@ -58,5 +59,29 @@ public class FactorMain : MonoBehaviour
         dellmouse.Print();
         hpmouse.Print();
         applemouse.Print();
+    }
+
+    void RunAbstructFactor()
+    {
+        AbstructFactor_Hp Hp = new();
+        AbstructMouse hpmouse = Hp.CreatMouse();
+        AbstructKeyboard hpkeyboard = Hp.CreatKeyboard();
+
+        hpmouse.Print();
+        hpkeyboard.Print();
+
+        AbstructFactor_Apple Apple = new();
+        AbstructMouse applemouse = Apple.CreatMouse();
+        AbstructKeyboard applekeyboard = Apple.CreatKeyboard();
+
+        applemouse.Print();
+        applekeyboard.Print();
+
+        AbstructFactor_Dell Dell = new();
+        AbstructMouse dellmouse = Dell.CreatMouse();
+        AbstructKeyboard dellkeyboard = Dell.CreatKeyboard();
+
+        dellmouse.Print();
+        dellkeyboard.Print();
     }
 }
