@@ -5,8 +5,14 @@ using UnityEngine.UI;
 
 public class SigninBackgroud : MonoBehaviour
 {
+    public static SigninBackgroud Instance;
     private Button signupButton;
     private Button loginButton;
+    private void Awake()
+    {
+        Instance = this;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
