@@ -1,13 +1,15 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class SigninBackgroud : MonoBehaviour
+public class RootPanel : MonoBehaviour
 {
-    public static SigninBackgroud Instance;
+    public static RootPanel Instance;
     private Button signupButton;
     private Button loginButton;
+
     private void Awake()
     {
         Instance = this;
@@ -25,11 +27,17 @@ public class SigninBackgroud : MonoBehaviour
 
     private void SignupClick()
     {
-        Debug.Log("Signup");
+        SignupPanel.Instance.Show();
+        gameObject.SetActive(false);
     }
 
     private void LoginClick()
     {
         Debug.Log("Login");
+    }
+
+    public void Show()
+    {
+        gameObject.SetActive(true);
     }
 }
