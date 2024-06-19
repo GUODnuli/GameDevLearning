@@ -33,7 +33,8 @@ public class RootPanel : MonoBehaviour
 
     private void LoginClick()
     {
-        Debug.Log("Login");
+        LoginPanel.Instance.Show();
+        gameObject.SetActive(false);
     }
 
     public void Show()

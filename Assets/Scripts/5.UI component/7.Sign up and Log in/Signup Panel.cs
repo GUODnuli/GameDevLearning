@@ -56,7 +56,6 @@ public class SignupPanel : MonoBehaviour
                 L5_7UserInfo userInfo = new L5_7UserInfo(userName.text, password.text, isMan.isOn);
                 GameManager.Instance.SaveUserInfo(userInfo);
                 FloatWindow.Instance.ShowInfo("×¢²á³É¹¦");
-
             }
             userName.text = "";
             password.text = "";
