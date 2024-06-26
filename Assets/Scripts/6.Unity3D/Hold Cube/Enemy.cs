@@ -26,7 +26,7 @@ public class Enemy : MonoBehaviour
 
     private void Move()
     {
-        Vector3 offset = transform.forward * Time.fixedDeltaTime * speed;
+        Vector3 offset = speed * Time.fixedDeltaTime * transform.forward;
         rb.MovePosition(transform.position + offset);
     }
 
@@ -40,9 +40,9 @@ public class Enemy : MonoBehaviour
     {
         if (health_point <= 0)
         {
+            UIManager.Instance.UpdateScoreText();
             DestroyImmediate(gameObject);
         }
-        Debug.LogFormat("Number of enemies: {0}", GameObject.FindGameObjectsWithTag("Enemy").Length);
         if (GameObject.FindGameObjectsWithTag("Enemy").Length == 0)
         {
             Player.Instance.Win();
