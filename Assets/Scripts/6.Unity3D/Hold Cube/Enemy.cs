@@ -40,7 +40,12 @@ public class Enemy : MonoBehaviour
     {
         if (health_point <= 0)
         {
-            Destroy(gameObject);
+            DestroyImmediate(gameObject);
+        }
+        Debug.LogFormat("Number of enemies: {0}", GameObject.FindGameObjectsWithTag("Enemy").Length);
+        if (GameObject.FindGameObjectsWithTag("Enemy").Length == 0)
+        {
+            Player.Instance.Win();
         }
     }
 }

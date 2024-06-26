@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    public static Player Instance;
     private int shoot_damage_point = 50;
+    private bool is_defeat = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -31,6 +33,25 @@ public class Player : MonoBehaviour
                     enemy.Hurt(shoot_damage_point);
                 }
             }
+        }
+    }
+
+    public void Win()
+    {
+        Debug.Log("You win!");
+    }
+
+    public void Defeat()
+    {
+
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Enemy" && !is_defeat)
+        {
+            is_defeat = true;
+            Defeat();
         }
     }
 }
