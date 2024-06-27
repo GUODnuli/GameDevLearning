@@ -32,6 +32,7 @@
 ignore.conf
 .vscode/
 mono*
+global.json
 
 # ============ #
 # OS generated #
