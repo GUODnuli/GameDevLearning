@@ -40,8 +40,8 @@ public class Enemy : MonoBehaviour
     {
         if (health_point <= 0)
         {
-            UIManager.Instance.UpdateScoreText();
-            DestroyImmediate(gameObject);
+            // UIManager.Instance.UpdateScoreText();
+            // DestroyImmediate(gameObject);
         }
         if (GameObject.FindGameObjectsWithTag("Enemy").Length == 0)
         {

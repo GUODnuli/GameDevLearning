@@ -38,12 +38,12 @@ public class Player : MonoBehaviour
 
     public void Win()
     {
-        UIManager.Instance.ShowResult(true);
+        // UIManager.Instance.ShowResult(true);
     }
 
     public void Defeat()
     {
-        UIManager.Instance.ShowResult(false);
+        // UIManager.Instance.ShowResult(false);
     }
 
     private void OnTriggerEnter(Collider other)
